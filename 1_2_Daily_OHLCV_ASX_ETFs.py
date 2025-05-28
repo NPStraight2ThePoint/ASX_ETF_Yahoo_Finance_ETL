@@ -5,7 +5,7 @@ import os
 from datetime import datetime
 from datetime import timedelta
 
-db_url = "postgresql://postgres:Arxidolemios39@localhost:5432/Yahoo_Finance_API"
+db_url = "postgresql://....."
 engine = create_engine(db_url)
 table_name = "asx_etf_ohlcv"
 query = "SELECT date FROM asx_etf_ohlcv ORDER BY date DESC LIMIT 1;"
@@ -23,7 +23,7 @@ tickers_df = pd.read_csv("Market_Index_ASX_ETFs.csv")
 etf_tickers = tickers_df['ASX Code'].astype(str).str.upper()
 etf_tickers = [ticker if ticker.endswith('.AX') else f"{ticker}.AX" for ticker in etf_tickers]
 
-output_dir = r"C:\Users\nicho\PycharmProjects\Projects\API2SQL Pipelines\2.3 Yahoo_Finance_2\Yahoo_Finance_2\Data\Pricing"
+output_dir = r"C:\..."
 os.makedirs(output_dir, exist_ok=True)  # Ensure directory exists
 output_filename = f"ASX_ETFs_OHLCV_{today_str}_Daily.csv"
 output_filename_merged = f"ASX_ETFs_Merged_{today_str}_Daily.csv"
