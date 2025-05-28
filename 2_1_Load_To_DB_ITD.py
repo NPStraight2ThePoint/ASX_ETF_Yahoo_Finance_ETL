@@ -5,10 +5,10 @@ from datetime import datetime
 import os
 
 today_str = datetime.today().strftime('%Y-%m-%d')
-output_dir = r"C:\Users\nicho\PycharmProjects\Projects\API2SQL Pipelines\2.3 Yahoo_Finance_2\Yahoo_Finance_2\Data\Pricing"
+output_dir = r"C:\..."
 csv_path = os.path.join(output_dir, f"ASX_ETFs_OHLCV_{today_str}_ITD.csv")
 
-db_url = "postgresql://postgres:Arxidolemios39@localhost:5432/Yahoo_Finance_API"  # <-- replace
+db_url = "postgresql://..."  # <-- replace
 table_name = "asx_etf_ohlcv"
 
 df = pd.read_csv(csv_path)
