@@ -10,7 +10,7 @@ tickers_df = pd.read_csv("Market_Index_ASX_ETFs.csv")
 etf_tickers = tickers_df['ASX Code'].astype(str).str.upper()
 etf_tickers = [ticker if ticker.endswith('.AX') else f"{ticker}.AX" for ticker in etf_tickers]
 
-output_dir = r"C:\Users\nicho\PycharmProjects\Projects\API2SQL Pipelines\2.3 Yahoo_Finance_2\Yahoo_Finance_2\Data\Pricing"
+output_dir = r"C:\..."
 os.makedirs(output_dir, exist_ok=True)  # Ensure directory exists
 output_filename = f"ASX_ETFs_OHLCV_{today_str}_ITD.csv"
 output_filename_merged = f"ASX_ETFs_Merged_{today_str}_ITD.csv"
