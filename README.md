@@ -49,7 +49,7 @@ This pipeline supports both:
 
 This ETL forms the **foundation** for a full ML-based investment pipeline.
 
-➡️ The [ML Pipeline Repo]() includes:
+➡️ The [ML Pipeline Repo](https://github.com/NPStraight2ThePoint/ML_Linear_Forecast_Optimisation) includes:
 - Linear price forecasting models  
 - Portfolio optimisation using Sharpe Ratio maximisation  
 - Realised vs Expected performance comparisons  
