@@ -5,10 +5,10 @@ from datetime import datetime
 import os
 
 today_str = datetime.today().strftime('%Y-%m-%d')
-output_dir = r"C:\..."
+output_dir = r"C:\...\Pricing"
 csv_path = os.path.join(output_dir, f"ASX_ETFs_OHLCV_{today_str}_ITD.csv")
 
-db_url = "postgresql://..."  # <-- replace
+db_url = "postgresql://postgres:...@localhost:5432/Yahoo_Finance_API"  # <-- replace
 table_name = "asx_etf_ohlcv"
 
 df = pd.read_csv(csv_path)
@@ -28,6 +28,7 @@ with engine.begin() as conn:
     conn.execute(stmt)
 
 print("✅ Data inserted. Duplicates (ticker, date) automatically skipped.")
+
 
 
 
