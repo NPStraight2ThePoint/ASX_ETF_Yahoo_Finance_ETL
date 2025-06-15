@@ -37,19 +37,4 @@ This pipeline supports both:
 
 ---
 
-## 🧱 Database
-
-All data is stored in a PostgreSQL table:
-
-```sql
-CREATE TABLE asx_etf_ohlcv (
-    ticker TEXT,
-    date DATE,
-    open FLOAT,
-    high FLOAT,
-    low FLOAT,
-    close FLOAT,
-    volume BIGINT,
-    PRIMARY KEY (ticker, date)
-);
 
